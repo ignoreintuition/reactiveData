@@ -3,26 +3,26 @@
     <H1> Reactive Data with Vue </H1>
     <div>
         <ul>
-          <li v-for="(a, index) in arr">
-          {{a.val}}
+          <li v-for="(a, index) in students">
+          {{a.grade}}
           </li>
         </ul>
     </div>
 
     <div class="component">
       <form>
-        <div v-for="a in arr">
-          <input v-model="a.val"/>
+        <div v-for="a in students">
+          <input v-model="a.grade"/>
         </div>
       </form>
     </div>
 
     <div class="component">
       <svg class="chart">
-        <rect v-for="(a, index) in arr" class="bar"
+        <rect v-for="(a, index) in students" class="bar"
           height  = "20"
           x       = "0"
-          :width  = "a.val * 2"
+          :width  = "a.grade * 2"
           :y      = "index * 22" />
       </svg>
     </div>

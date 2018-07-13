@@ -1,22 +1,22 @@
 export default {
   name: 'DataViz',
-  data() {
-    return {
-      arr: [{
+    data() {
+      return {
+        students: [{
           "name": "Jack",
-          "val": 100
+          "grade": 100
         },
         {
           "name": "Mary",
-          "val": 50
+          "grade": 50
         },
         {
           "name": "Jim",
-          "val": 45
+          "grade": 45
         },
         {
           "name": "Jill",
-          "val": 95
+          "grade": 95
         }
       ]
     }
